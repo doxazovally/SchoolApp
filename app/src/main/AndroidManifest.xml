@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.schoolapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Assignment_in_full_parent" />
+        <activity android:name=".Assignment_in_full_teacher" />
+        <activity android:name=".teacherFeedback" />
+        <activity android:name=".giveAssignment" />
+        <activity android:name=".TeacherProfile" />
+        <activity android:name=".editKidPage" />
+        <activity android:name=".addKidPage" />
+        <activity android:name=".parentProfile" />
+        <activity android:name=".PasswordResetSuccess" />
+        <activity android:name=".NewPasswordPage" />
+        <activity android:name=".forgetPassword2" />
+        <activity android:name=".PhoneValidation" />
+        <activity android:name=".forgetPass1" />
+        <activity android:name=".TeacherHomePage" />
+        <activity android:name=".TeacherReg" />
+        <activity android:name=".parent_Home_page" />
+        <activity android:name=".parentReg" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101625"
+    android:padding="25dp"
+    tools:context=".giveAssignment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#101625">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/teacher_Assignment_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/teacherAssPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Teacher's\nAssignment page.."
+            android:padding="13dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="transition_createAcc_text" />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/assSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/button_10"
+            android:drawableStart="@drawable/ic_prod_edit"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/salsa"
+            android:hint="Assignment Subject"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="13dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColorHint="#efefef"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <TextView
+            android:id="@+id/assClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assSubject"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/button_10"
+            android:drawableStart="@drawable/ic_wc_black_24dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/salsa"
+            android:hint="Assignment Class"
+            android:padding="13dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColorHint="#efefef"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <EditText
+            android:id="@+id/assTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assClass"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/button_10"
+            android:drawableStart="@drawable/ic_category"
+            android:drawablePadding="5dp"
+            android:hint="Assignment Topic/Title"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="13dp"
+            android:fontFamily="@font/salsa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColorHint="#efefef"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <LinearLayout
+            android:id="@+id/assDateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/assTopic"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/assDateGiven"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="39dp"
+                android:background="@drawable/button_10"
+                android:drawableStart="@drawable/calender"
+                android:drawablePadding="9dp"
+                android:hint="Date Given"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="13dp"
+                android:fontFamily="@font/salsa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColorHint="#efefef"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+            <TextView
+                android:id="@+id/assSubmissionDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button_10"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/calender"
+                android:hint="Submission Date"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="13dp"
+                android:fontFamily="@font/salsa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColorHint="#efefef"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/assDateLayout"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/assMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mode of assignment"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="true"
+            android:layout_below="@id/view2"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/roboto_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginBottom="25dp"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/assModeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/assMode"
+            android:layout_marginBottom="30dp">
+
+
+            <TextView
+                android:id="@+id/assType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="25dp"
+                android:gravity="center"
+                android:background="@drawable/button_10"
+                android:drawablePadding="5dp"
+                android:text="Type it"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="13dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/salsa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#efefef" />
+
+
+            <TextView
+                android:id="@+id/assPicUpload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="25dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button_10"
+                android:gravity="center"
+                android:text="Picture"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="13dp"
+                android:fontFamily="@font/salsa"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#efefef" />
+
+
+            <TextView
+                android:id="@+id/assPdfUpload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button_10"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="In PDF"
+                android:inputType="textPersonName|textCapWords"
+                android:textAllCaps="true"
+                android:padding="13dp"
+                android:fontFamily="@font/salsa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#efefef"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/typeAss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assModeLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_10"
+            android:drawableStart="@drawable/ic_prod_edit"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/salsa"
+            android:hint="Please Type In Assignment...."
+            android:padding="13dp"
+            android:visibility="gone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <ImageView
+            android:id="@+id/assImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:layout_below="@id/typeAss"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:src="@drawable/bookerass" />
+
+        <LinearLayout
+            android:id="@+id/pdfLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/assImage"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentEnd="true">
+
+
+            <Button
+                android:id="@+id/assPdfBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/button_10"
+                android:fontFamily="@font/salsa"
+                android:text="Select a file"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/uploadedPdfFile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/salsa"
+                android:text="No file selected"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/give_assignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pdfLayout"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_11"
+            android:fontFamily="@font/salsa"
+            android:minWidth="120dp"
+            android:text="Give Assignment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>

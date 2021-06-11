@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101625"
+    android:orientation="vertical"
+    tools:context=".editKidPage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Toolbar-->
+        <RelativeLayout
+            android:id="@+id/add_prod_headding"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="7dp">
+
+            <ImageButton
+                android:id="@+id/edit_backBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/prod_Heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Update My Kids"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <!--Form to input data-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/kidpic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/ic_person_black_24dp"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp" />
+
+            <EditText
+                android:id="@+id/Ekid_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kidpic"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30sp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/button_10"
+                android:drawableStart="@drawable/ic_profile_blue"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Name"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/Ekid_Class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Ekid_Title"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/button_10"
+                android:drawableStart="@drawable/ic_wc_black_24dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/roboto_slab"
+                android:hint="Class"
+                android:padding="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+
+            <EditText
+                android:id="@+id/Ekid_School"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Ekid_Class"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="17dp"
+                android:background="@drawable/button_10"
+                android:drawableStart="@drawable/ic_category"
+                android:drawablePadding="5dp"
+                android:hint="School"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="15dp"
+                android:fontFamily="@font/salsa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColorHint="@color/colorPrimaryDark"  />
+
+
+            <EditText
+                android:id="@+id/Ekid_Teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Ekid_School"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/button_10"
+                android:drawableStart="@drawable/ic_edit"
+                android:drawablePadding="5dp"
+                android:hint="Teacher's name"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="15dp"
+                android:fontFamily="@font/salsa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/Update_kid_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Ekid_Teacher_name"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button2"
+                android:fontFamily="@font/salsa"
+                android:minWidth="120dp"
+                android:text="Update Kid"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+
+

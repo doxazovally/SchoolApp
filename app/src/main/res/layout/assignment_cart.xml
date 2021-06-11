@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_11"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/AssignmentSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:padding="3dp"
+        android:fontFamily="@font/roboto_slab"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/AssignnemtTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topic"
+        android:gravity="center"
+        android:padding="3dp"
+        android:layout_below="@id/AssignmentSubject"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/roboto_slab"/>
+
+    <TextView
+        android:id="@+id/AssDate1Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:gravity="center"
+        android:padding="3dp"
+        android:layout_below="@id/AssignnemtTopic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/roboto_slab"/>
+
+
+    <TextView
+        android:id="@+id/itemAssignmentRemove"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AssignnemtTopic"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="@font/salsa"
+        android:background="@drawable/shape_rec_04"
+        android:text="Remove"
+        android:textColor="#ffffff"/>
+
+
+
+</RelativeLayout>

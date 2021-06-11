@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="17dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="#02231c"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TassignmentLogIdTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assignment ID: 12345"
+            android:layout_marginTop="3dp"
+            android:padding="5dp"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/roboto_slab"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TassignmentLogDateGivenTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="3dp"
+            android:text="01/06/2020"
+            android:fontFamily="@font/roboto_slab"
+            android:padding="3dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/TassLogSubjectTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TassignmentLogIdTv"
+            android:text="Subject"
+            android:fontFamily="@font/roboto_slab"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/TassignmentLogTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TassLogSubjectTv"
+            android:text="Topic"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_slab"
+            android:padding="5dp"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <TextView
+            android:id="@+id/TassignmentStatusTv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TassLogSubjectTv"
+            android:padding="5dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:background="@drawable/shape_rec_04"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:text="In Progress"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_slab"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <TextView
+            android:id="@+id/TassignmentLogClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TassignmentStatusTv"
+            android:text="Class"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_slab"
+            android:padding="5dp"
+            android:layout_marginStart="3dp"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/TassignmentLogDateSubmissionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/TassignmentStatusTv"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="3dp"
+            android:text="01/06/2020"
+            android:fontFamily="@font/roboto_slab"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:id="@+id/Tassignmentypedd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@+id/TassignmentLogClass"
+            android:text="My Assignment..."
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/roboto_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/TassignmentImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bookerass"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/TassignmentLogClass"
+            android:visibility="gone"
+            />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

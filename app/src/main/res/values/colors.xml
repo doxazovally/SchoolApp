@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#167432</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#f7ba7b</color>
+    <color name="brownLightcolor">#f4e3b1</color>
+    <color name="colorGreen">#218D02</color>
+    <color name="colorRed">#d50000</color>
+    <color name="coloryellowDark"> #f2a104</color>
+    <color name="colorBrown">#7d3f02</color>
+    <color name="colorGray2">#959595</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorblue3">#058acd</color>
+    <color name="colorblue2">#0d2247</color>
+    <color name="colorBlue">#0b254d</color>
+    <color name="colorgreen">#02231c</color>
+
+
+</resources>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".parent_Home_page">
+
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarSHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_08"
+        android:padding="9dp">
+
+        <!--Logout-->
+
+        <!--Edit profile-->
+
+        <!--Add Kid-->
+        <ImageButton
+            android:id="@+id/kidLogout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toStartOf="@id/sM_Name"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_logout"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/PP_edit_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/kidLogout"
+            android:background="@null"
+            android:src="@drawable/ic_edit" />
+
+        <ImageView
+            android:id="@+id/PP_addKid_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/PP_edit_Btn"
+            android:background="@null"
+            android:src="@drawable/ic_wc_black_24dp" />
+
+
+
+        <!--Kids Reviews-->
+
+        <!--Setting button-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/PprofileImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="#101625"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/sM_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/PprofileImage"
+            android:fontFamily="@font/roboto_slab"
+            android:padding="3dp"
+            android:layout_marginTop="5dp"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sM_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sM_Name"
+            android:layout_toEndOf="@+id/PprofileImage"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Phone"
+            android:padding="2dp"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sM_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sM_shop"
+            android:layout_toEndOf="@+id/PprofileImage"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Email"
+            android:padding="2dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <!--Tabs: products, orders-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/PprofileImage"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rec_04"
+            android:orientation="horizontal">
+
+            <!--Tabs: Parent,s Kids-->
+            <TextView
+                android:id="@+id/tabkid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rec_05"
+                android:fontFamily="@font/cormorant_garamond_medium"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="My Kid"
+                android:textColor="@color/colorPrimary" />
+
+
+            <!--Tabs: Assignment-->
+            <TextView
+                android:id="@+id/tabAddKid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/cormorant_garamond_medium"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Assignments"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--myKids-->
+    <RelativeLayout
+
+        android:id="@+id/KidRl"
+        android:layout_below="@id/toolbarSHP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--SearchView-->
+        <EditText
+            android:id="@+id/searchKidClassView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rec2"
+            android:drawableEnd="@drawable/ic_search"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="6dp"
+            android:drawablePadding="10dp"
+            android:layout_toStartOf="@id/filterKidClassBtn"
+            android:padding="10dp"
+            android:hint="Search"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:fontFamily="@font/roboto_medium"
+            android:textColorHint="@color/colorPrimary"/>
+
+        <!--Filter-->
+        <ImageButton
+            android:id="@+id/filterKidClassBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="3dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_filter"
+            android:background="@null"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/filteredKidTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchKidClassView"
+            android:padding="8dp"
+            android:layout_marginStart="1dp"
+            android:text="Showing All"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <!--RecycleView: show kids-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/KidRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/filteredKidTv"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_kid" />
+
+    </RelativeLayout>
+
+    <!--Tabs: Assignment Given UI-->
+    <RelativeLayout
+        android:id="@+id/AssignmentRlP"
+        android:layout_below="@id/toolbarSHP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!--recyclerView: Assignment Given UI-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/AssignmentRvP"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:stackFromEnd="true"
+            app:reverseLayout="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/assignment_log_parent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

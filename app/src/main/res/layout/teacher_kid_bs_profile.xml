@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bs_profile"
+    android:background="#02231c">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#02231c">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="34dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/kidProfilePic"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_toEndOf="@+id/kidProfilePic_D"
+                android:src="@drawable/ic_profile"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="1dp" />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/PPL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kidProfilePic"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:background="@drawable/button_white_curve">
+
+                <TextView
+                    android:id="@+id/bs_tnameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Name :"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:fontFamily="@font/cormorant_garamond_medium"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/bs_tschool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="School :"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cormorant_garamond_medium"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/bs_tClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Class :"
+                    android:textAllCaps="true"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cormorant_garamond_medium"
+                    android:textColor="@color/colorPrimary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                <TextView
+                    android:id="@+id/bs_ParentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/cormorant_garamond_medium"
+                    android:padding="5dp"
+                    android:text="Parent's Name :"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#F70F64"
+                    android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"/>
+
+
+            <TextView
+                android:id="@+id/seeFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/ic_chat_black_24dp"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="Give Feedback"
+                android:fontFamily="@font/cormorant_garamond_medium"
+                android:textSize="20sp"
+                android:textColor="#ffffff" />
+
+
+            <TextView
+                android:id="@+id/GiveAssignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/ic_widgets"
+                android:drawablePadding="25dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="Give Assignment"
+                android:fontFamily="@font/cormorant_garamond_medium"
+                android:textSize="20sp"
+                android:textColor="#ffffff"/>
+
+
+            <TextView
+                android:id="@+id/sendInvite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/ic_favorite_black"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="Send a Parent Invite"
+                android:fontFamily="@font/cormorant_garamond_medium"
+                android:textSize="20sp"
+                android:textColor="#ffffff"/>
+
+
+            <TextView
+                android:id="@+id/seeAsignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_whatshot_black_24dp"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="See Student Assignment Log"
+                android:fontFamily="@font/cormorant_garamond_medium"
+                android:textSize="20sp"
+                android:textColor="#ffffff"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
